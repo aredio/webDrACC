@@ -1084,41 +1084,37 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.section-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: var(--heading-color);
+  left: 15px; /* Alinha um pouco à direita */
+}
+
 .features .features-item {
   background-color: var(--surface-color);
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   transition: 0.3s;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  height: 150px;
+  overflow: hidden;
 }
 
-.features .features-item i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 0;
-}
-
-.features .features-item h3 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 16px;
-}
-
-.features .features-item h3 a {
-  color: var(--heading-color);
+.features .features-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   transition: 0.3s;
 }
 
 .features .features-item:hover {
   border-color: var(--accent-color);
-}
-
-.features .features-item:hover h3 a {
-  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -1745,6 +1741,21 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.other{
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  left: 20px; /* ou 30px */
+  line-height: 19px;
+  padding: 10px 20px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: var(--accent-color);
+  border-radius: 7px;
+  display: inline-block;
 }
 
 #robbu-whatsapp-button{display:flex;position:fixed;background:#25d366;bottom:65px;border-radius:50%;width:64px;height:64px;box-shadow:2px 2px 12px rgba(22,124,60,.2);transition:.4s;align-items:center;justify-content:center}#robbu-whatsapp-button>.rwb-tooltip{position:absolute;bottom:100%;margin-bottom:20px;border-radius:4px;padding:15px;color:#2d2d2d;font-size:16px;white-space:nowrap;box-shadow:2px 2px 12px rgba(0,0,0,.2);opacity:0;transition:.4s;pointer-events:none}#robbu-whatsapp-button>.rwb-tooltip:after{display:block;content:"";position:absolute;top:85%;width:0;height:0;border-style:solid;border-width:6px 7px 0 7px;border-color:#fff transparent transparent transparent;transition:.4s}#robbu-whatsapp-button.left{left:25px}#robbu-whatsapp-button.left>.rwb-tooltip{left:0;transform:translateX(-10%)}#robbu-whatsapp-button.left>.rwb-tooltip:after{left:23px}#robbu-whatsapp-button:not(.left){right:5px}#robbu-whatsapp-button:not(.left)>.rwb-tooltip{right:0;transform:translateX(10%)}#robbu-whatsapp-button:not(.left)>.rwb-tooltip:after{right:23px}#robbu-whatsapp-button>img{display:block;width:34px;height:34px}#robbu-whatsapp-button:hover{background:#21bd5c;box-shadow:3px 3px 12px rgba(14,81,39,.4)}#robbu-whatsapp-button:hover>.rwb-tooltip{opacity:1;transform:translateX(0)}#robbu-whatsapp-button:hover>.rwb-tooltip:after{top:100%;transition-delay:.4s}
