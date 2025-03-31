@@ -1350,212 +1350,96 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team .member {
-  position: relative;
-}
-
-.team .member .pic {
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.team .member .member-info {
-  background-color: var(--surface-color);
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+.services .service-card {
+  background: var(--surface-color);
+  color: var(--default-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
-  right: 20px;
-  padding: 20px 15px;
-  overflow: hidden;
-  transition: 0.5s;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 16px;
-  position: relative;
-  padding-bottom: 10px;
+.services .service-card:hover {
+  transform: translateY(-5px);
 }
 
-.team .member h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
-  bottom: 0;
-  left: 0;
-}
-
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-.team .member .social {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.team .member .social a:hover {
+.services .service-card .icon {
+  font-size: 40px;
   color: var(--accent-color);
+  margin-bottom: 15px;
 }
 
-.team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
+.services .service-card h4 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services .service-card p {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  flex-grow: 1;
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# clients Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
-  padding: 40px 40px;
+.client-card {
+  background: var(--surface-color);
+  color: var(--default-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   height: 100%;
   border-radius: 15px;
-}
-
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.pricing h4 {
-  color: var(--accent-color);
-  font-size: 48px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.pricing .description {
-  font-size: 14px;
-}
-
-.pricing .cta-btn {
-  border: 1px solid var(--default-color);
-  color: var(--default-color);
-  display: block;
   text-align: center;
-  padding: 10px 35px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-.pricing .cta-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
 }
 
-.pricing ul li:last-child {
-  padding-bottom: 0;
+.client-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .featured {
-  position: relative;
-}
-
-.pricing .featured .popular {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 4px 15px 6px 15px;
-  margin: 0;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.pricing .featured .cta-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
+.client-card h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 @media (max-width: 992px) {
-  .pricing .box {
+  .client-card {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 767px) {
-  .pricing .box {
+  .client-card {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 420px) {
-  .pricing .box {
+  .client-card {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
 }
 
+.client-card:hover {
+  transform: translateY(-5px);
+}
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
