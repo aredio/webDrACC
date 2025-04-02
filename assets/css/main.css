@@ -878,7 +878,7 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 .hero .img-fluid.animated {
-  max-width: 110%; /* Ajuste conforme necessário */
+  max-width: 100%; /* Ajuste conforme necessário */
   width: auto;
 }
 
