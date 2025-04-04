@@ -877,10 +877,6 @@ section,
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-.hero .img-fluid.animated {
-  max-width: 100%; /* Ajuste conforme necessário */
-  width: auto;
-}
 
 @media (max-width: 640px) {
   .hero h1 {
