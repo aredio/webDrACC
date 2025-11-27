@@ -2,10 +2,9 @@
   "name": "bootslander-1.0.0",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
     "dev": "vite",
-    "build": "tsc && node scripts/copy-build.js",
-    "build:ts": "tsc",
+    "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "repository": {
