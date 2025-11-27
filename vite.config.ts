@@ -5,6 +5,9 @@ export default defineConfig({
   // Define a raiz como o diretório atual
   root: './',
   
+  // Define a pasta public - o Vite copia seu conteúdo para a raiz do build
+  publicDir: 'public',
+  
   build: {
     // A pasta de saída PADRÃO da indústria. Nunca use '.'
     outDir: 'dist',
